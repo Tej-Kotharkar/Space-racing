@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Space Racing Game</h1>
+    <div id="controls">
+        <div>
+            <label for="numPlayers">Number of Players:</label>
+            <select id="numPlayers">
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div>
+            <label for="player1">Player 1 Spaceship:</label>
+            <select id="player1">
+                <option value="ship1">Spaceship 1</option>
+                <option value="ship2">Spaceship 2</option>
+                <option value="ship3">Spaceship 3</option>
+            </select>
+        </div>
+        <div id="player2Control">
+            <label for="player2">Player 2 Spaceship:</label>
+            <select id="player2">
+                <option value="ship1">Spaceship 1</option>
+                <option value="ship2">Spaceship 2</option>
+                <option value="ship3">Spaceship 3</option>
+            </select>
+        </div>
+        <div id="player3Control" style="display: none;">
+            <label for="player3">Player 3 Spaceship:</label>
+            <select id="player3">
+                <option value="ship1">Spaceship 1</option>
+                <option value="ship2">Spaceship 2</option>
+                <option value="ship3">Spaceship 3</option>
+            </select>
+        </div>
+        <button id="startBtn">Start Game</button>
+        <div id="timer">Time: 0s</div>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>
